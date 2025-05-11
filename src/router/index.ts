@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TodoView from "@/views/TodoView.vue";
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -35,6 +36,12 @@ const router = createRouter({
       path: '/timer',
       name: 'timer',
       component: () => import('../views/TimerView.vue'),
+      meta: {isVisibleFooter: false},
+    },
+    {
+      path: '/todo',
+      name: 'todo',
+      component: TodoView,
       meta: {isVisibleFooter: false},
     },
   ],
