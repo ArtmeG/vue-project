@@ -6,6 +6,7 @@ import CounterPageViewComposition from '@/components/dashboard/counterPage/Count
 
 <template>
   <CounterPageViewOption />
+  -----------------------------------
   <CounterPageViewComposition />
 </template>
 
